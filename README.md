@@ -54,6 +54,7 @@ Plan and track Swedish parental leave with a fast, visual calendar. Tag each day
 ### Install
 ```bash
 npm install
+npm i -D @tailwindcss/cli
 ```
 
 ### Dev server
@@ -140,3 +141,4 @@ src/
 ---
 ## Disclaimer
 This project reflects a best-effort interpretation of Swedish parental leave rules and SGI guidance for planning purposes only. Always confirm details with Försäkringskassan and official sources before making decisions.
+
