@@ -45,6 +45,7 @@ export default function App() {
             childDob={state.config.childDob}
             setPrev={()=>dispatch({ type:'SET_MONTH', date: addMonths(state.monthCursor,-1) })}
             setNext={()=>dispatch({ type:'SET_MONTH', date: addMonths(state.monthCursor,1) })}
+            setToday={()=> dispatch({ type:"SET_MONTH", date: startOfMonth(new Date()) })}
             setDob={(v)=>dispatch({ type:'SET_DOB', dob: v })}
             jumpToDob={()=>dispatch({ type:'SET_MONTH', date: startOfMonth(fromISO(state.config.childDob)) })}
           />
